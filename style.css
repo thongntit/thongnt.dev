@@ -1,0 +1,45 @@
+:root {
+    font-size: 62.5%;
+    font-family: 'Poppins';
+}
+
+.nav-bar {
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar__action {
+    display: flex;
+    align-items: center;
+}
+.nav-bar__action > *{
+    margin-left: 2rem;
+}
+.nav-bar__home-btn {
+    width: 5rem;
+    height: 5rem;
+}
+
+.nav-bar__btn {
+    display: inline-block;
+    font-size: 175%;
+    transition: all 0.2s;
+}
+.nav-bar__btn:hover {
+    color: #3CAD51;
+}
+
+.nav-bar__contact-btn {
+    border: 2px solid #3CAD51;
+    color: #3CAD51;
+    padding: 1rem;
+    border-radius: 24px;
+    transition: all 0.2s;
+
+}
+
+.nav-bar__contact-btn:hover {
+    color: white;
+    background-color: #3CAD51;
+}
