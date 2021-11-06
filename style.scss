@@ -1,19 +1,14 @@
 :root {
   font-size: 62.5%;
-  font-family: "Poppins";
+  font-family: "Architects Daughter", cursive;
 }
 
 .nav-bar {
-  padding: 4rem 30rem;
+  position: relative;
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
-  &__action {
-    display: flex;
-    align-items: center;
-  }
-  &__action > * {
-    margin-left: 2rem;
-  }
+
   &__home-btn {
     width: 5rem;
     height: 5rem;
@@ -21,42 +16,69 @@
       cursor: pointer;
     }
   }
-  &__btn {
-    display: inline-block;
-    font-size: 175%;
-    transition: all 0.2s;
-    &:hover {
+
+  &__action > * {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 4rem 10rem;
+    &__action {
+      display: flex;
+      align-items: center;
+    }
+    &__action > * {
+      margin-left: 2rem;
+    }
+    &__btn {
+      display: inline-block;
+      font-size: 175%;
+      transition: all 0.2s;
+      &:hover {
+        color: #3cad51;
+        cursor: pointer;
+      }
+    }
+    &__contact-btn {
+      border: 2px solid #3cad51;
       color: #3cad51;
-      cursor: pointer;
+      padding: 1rem;
+      border-radius: 24px;
+      transition: all 0.2s;
+      &:hover {
+        background-color: #3cad51;
+        color: white;
+        cursor: pointer;
+      }
     }
   }
-  &__contact-btn {
-    border: 2px solid #3cad51;
-    color: #3cad51;
-    padding: 1rem;
-    border-radius: 24px;
-    transition: all 0.2s;
-    &:hover {
-      background-color: #3cad51;
-      color: white;
-      cursor: pointer;
-    }
+  
+  @media screen and (min-width: 1200px) {
+    padding: 4rem 30rem;
   }
 }
 
+.hero_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: calc( 100vh - 13rem) ;
+}
+
 .hero {
-  padding-top: 10rem;
   text-align: center;
   &__title {
     font-size: 400%;
     font-weight: 800;
+    line-height: 1.2;
   }
   &__desc {
-    margin-top: 2rem;
     font-size: 200%;
+    line-height: 1.5;
   }
   &__img {
-    margin-top: 10rem;
+    margin-top: 2rem;
     width: 30rem;
     height: 30rem;
   }
