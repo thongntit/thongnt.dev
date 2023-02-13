@@ -1,43 +1,31 @@
 :root {
   font-size: 62.5%;
-  font-family: "Architects Daughter", cursive;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav-bar {
   position: relative;
   padding: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .nav-bar__home-btn {
   width: 5rem;
   height: 5rem;
 }
-
 .nav-bar__home-btn:hover {
   cursor: pointer;
 }
-
 .nav-bar__action > * {
   display: none;
 }
-
 @media screen and (min-width: 768px) {
   .nav-bar {
     padding: 4rem 10rem;
   }
   .nav-bar__action {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .nav-bar__action > * {
     margin-left: 2rem;
@@ -45,7 +33,6 @@
   .nav-bar__btn {
     display: inline-block;
     font-size: 175%;
-    -webkit-transition: all 0.2s;
     transition: all 0.2s;
   }
   .nav-bar__btn:hover {
@@ -57,7 +44,6 @@
     color: #3cad51;
     padding: 1rem;
     border-radius: 24px;
-    -webkit-transition: all 0.2s;
     transition: all 0.2s;
   }
   .nav-bar__contact-btn:hover {
@@ -66,7 +52,6 @@
     cursor: pointer;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .nav-bar {
     padding: 4rem 30rem;
@@ -74,40 +59,27 @@
 }
 
 .hero_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: calc( 100vh - 13rem);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 13rem);
 }
 
 .hero {
   text-align: center;
 }
-
 .hero__title {
   font-size: 400%;
   font-weight: 800;
   line-height: 1.2;
 }
-
 .hero__desc {
   font-size: 200%;
   line-height: 1.5;
 }
-
 .hero__img {
   margin-top: 2rem;
   width: 30rem;
   height: 30rem;
 }
-/*# sourceMappingURL=style.css.map */
